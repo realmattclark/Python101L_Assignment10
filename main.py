@@ -6,7 +6,7 @@ while True:
     file_name = input('Enter name of file to open.')
 
     try:
-        with open(filename):
+        with open(file_name, 'r'):
             dict1 = dict()
         for word in line.strip.split(''):
 
@@ -22,8 +22,8 @@ while True:
         
         counter = 1
         print('Most used words: ')
-        print('{:>0}{:>15}{:>15}'.format('counter', 'word', 'freq'))
-        print('{:>15}'.format('=============================='))
+        print('{} \t\t{} \t\t{}'.format('counter', 'word', 'freq'))
+        print('\n{}'.format('=============================='))
         for key in word:
             if counter > 10:
                 break
