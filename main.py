@@ -1,13 +1,13 @@
-f = open(gettysburg.txt, 'r')
+f = open('gettysburg.txt', 'r')
 
 
 while True:
 
-    file_name = input('Enter name of file to open: ')
+    file_name = 'gettysburg.txt'
 
     try:
-        with open(file_name, 'r'):
-            dict1 = dict()
+        open(file_name, 'r')
+        
         for word in line.strip.split(''):
 
             word = word.strip()
