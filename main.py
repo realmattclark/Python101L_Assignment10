@@ -1,9 +1,9 @@
-f = open('gettysburg.txt', 'r')
+f = open(gettysburg.txt, 'r')
 
 
 while True:
 
-    file_name = input('Enter name of file to open.')
+    file_name = input('Enter name of file to open: ')
 
     try:
         with open(file_name, 'r'):
@@ -37,8 +37,8 @@ while True:
                 one_counter += 1
         special_counter = len(word)
 
-        print(f'There are {one_counter} words that only occur once.')
-        print(f'There are {special_counter} unique words in the document')
+        print('There are', one_counter, 'words that only occur once.')
+        print('There are', special_counter, 'unique words in the document')
     except:
         print('Can not open file. Please try again.')
     else:
