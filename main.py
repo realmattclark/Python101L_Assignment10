@@ -10,7 +10,7 @@ while True:
             dict1 = dict()
         for word in line.strip.split(''):
 
-            word = word.strip(punctuation)
+            word = word.strip()
             if len(word) <= 3:
                 continue
             else:
